@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html> 
+   <head>
+	   <link href="survey-form.css" rel="stylesheet" type="text/css">
+        <h1 id="title">Survey Form </h1>
+  </head>
+  
+  <body>
+   <p id="description">How can we help you?</p>
+  
+  <form id="survey-form"> 
+
+    <div clase="input-headings">
+
+  <label id="name-label" for="name">Your name:</label>
+    <input class="form-inputs" id="name" type="text" name="name" placeholder="Insert your name" required></input> <br>
+      <br>
+  <label id="email-label" for="email">Your Email:</label>
+    <input class="form-inputs" id="email" type="email" name="email" placeholder="example@gmail.com" required></input> <br>
+      <br>
+  <label id="message-label" for="message" >Your message:</label>
+    <input class="form-inputs" id="message" type="text" name="message" placeholder="How can I help you" required></input> <br>
+      <br>
+  <label id="number-label" for="number">Age:</label>
+    <input class="form-inputs" id="number" type="number" name="number" placeholder="18" min="18" max="100" required></input>
+  
+<label for="dropdown" id="gender"> Select gender </lebel>
+   <select class="form-inputs" id="dropdown">
+      <option value="female"> Female </option>
+      <option value="male"> Male </option>
+       <option value="others"> Others </option> 
+    </select>
+  <br>
+  <br>
+
+  <label for="find_us" id="find_us"> <b> How did you find us?: </b> </label> 
+  <br>
+  <input id="find_us" type="radio" id="internet" name="find_us" value="internet">
+  <label for="find_us"> Internet </label>
+  <br>
+  <input id="find_us" type="radio" id="friend" name="find_us" value="friend">
+  <label for="find_us"> A friend </label>
+  <br>
+  <input id="find_us" type="radio" id="social" name="find_us" value="social">
+  <label for="find_us"> Social Networks </label>
+  <br>
+<br>
+
+<label for="features"> <b> Add product features: </b> </label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="box">
+<label for="checkbox"> Box in poor condition </label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="damaged">
+<label for="checkbox"> Damaged product </label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="missing">
+<label for="checkbox"> Missing products </label>
+<br>
+<input id="checkbox" type="checkbox" name="features" value="late">
+<label for="checkbox"> Late delivery </label>
+<br>
+<br>
+  <label id="textarea"> Additional Comments </label>
+  <br>
+  <textarea id="taxtarea" name="instructions" rows="5" cols="40">
+    
+</textarea>
+<br>
+ 
+  <input class="submit-button" id="submit" type="submit" value="Submit">
+ 
+</div>
+</form>
+
+</body>
+</html>
